@@ -1,21 +1,11 @@
-import './App.css';
-import MyCalendar from './components/Calender';
-import StickyFooter from './components/Footer';
+import React from "react";
+import CalendarRoster from "./components/Calender"
+import "react-big-calendar/lib/css/react-big-calendar.css";
 
-import HeaderMUI from './components/HeaderMUI';
-
-
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <HeaderMUI />
-
-      <MyCalendar />
-      <div>
-        <StickyFooter />
-      </div>
+      <CalendarRoster />
     </div>
   );
 }
-
-export default App;
